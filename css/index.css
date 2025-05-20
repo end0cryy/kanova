@@ -1,0 +1,636 @@
+/* Header con fondo */
+.custom-header {
+    width: 100%;
+    background-image: url('../resources/1.jpg'); /* Ruta a tu imagen */
+    background-position: center;
+}
+
+/* Contenedor más alto */
+.header-container {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Logo más grande */
+.logo-img {
+    height: 120px;
+    margin-left: 4rem;
+}
+
+/* Navegación centrada */
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+    margin: 0 auto;
+    font-weight: 500;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Enlaces del menú */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: inherit;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #a0a0a0;
+}
+
+/* Botón a la derecha */
+.contact-button {
+    flex-shrink: 0;
+    margin-right: 4rem;
+    transition: transform 0.3s ease;
+}
+.contact-button:hover {
+    transform: scale(1.1);
+}
+.btn-contact {
+    background-color: white;
+    color: black;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.btn-contact:hover {
+    background-color: #e5e5e5;
+}
+
+/* Fuente general y fondo del body con efecto parallax */
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    background-color: black;
+    background-image: url('../resources/5.jpg');
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Estilos para el contenedor principal del contenido */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: calc(100vh - 80px);
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenedor del título y subtítulo */
+.title-container {
+    background-image: url('../resources/banner.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos para el título principal */
+.main-title {
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 2.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para el subtítulo */
+.subtitle {
+    color: rgba(255, 255, 255, 0.562);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* Estilos para el contenedor del carrusel principal */
+.carousel-container {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+/* Estilos para el carrusel principal (la lista de imágenes) */
+.carousel {
+    display: flex;
+    gap: 3rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* Estilos base para cada item del carrusel principal (los enlaces) */
+.carousel-item {
+    width: 300px;
+    height: auto;
+    flex: 0 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.692);
+}
+
+.ver-catalogo-container {
+  text-align: center;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+}
+
+.ver-catalogo-btn {
+  background-color: rgb(17, 5, 41);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.ver-catalogo-btn:hover {
+  transform: scale(1.1);
+  background-color: #111;
+}
+
+/* Estilos para la sección "Nosotros" con imagen de fondo */
+.nosotros-section {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-image: url('../resources/1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.nosotros-grid {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.nosotros-text {
+    flex: 1;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.nosotros-text h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.nosotros-text p {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* === NUEVO: Estilos para el carrusel lateral en sección Nosotros === */
+.nosotros-carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    width: 220px;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-track img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-shrink: 0;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Overlay negro transparente */
+.info-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1;
+}
+
+.info-section {
+  position: relative;
+  width: 100vw;
+  background-image: url('../resources/3.jpg');
+  background-size:auto;
+  background-position: center center;
+  background-repeat: repeat;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+/* Fondo negro solo dentro del ancho del contenido */
+.overlay {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Contenido sobre la capa negra */
+.info-grid {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.info-column {
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+.info-column h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.info-column p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.buttons-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  gap: 0.6rem;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.social-btn i {
+  font-size: 1.4rem;
+}
+
+/* Colores específicos para cada botón */
+.instagram-btn:hover {
+  background-color: #e4405f;
+}
+
+.tiktok-btn:hover {
+  background-color: #69c9d0;
+  color: black;
+}
+
+.whatsapp-btn:hover {
+  background-color: #25d366;
+  color: black;
+}
+
+/* Responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .info-grid {
+    flex-direction: column;
+  }
+  .info-column {
+    min-width: 100%;
+  }
+}
+
+.custom-footer {
+  background-image: url('../resources/4.jpg');
+  background-position: center;
+  color: rgba(255, 255, 255, 0.651);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.footer-column p {
+  font-size: 1rem;
+  margin: 0.4rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-column i {
+  font-size: 1.1rem;
+}
+
+.footer-section.nexora-group h3 {
+  text-align: left;
+}
+
+.footer-section.nexora-group .nexora-members {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-section.nexora-group .member {
+  flex: 1;
+  min-width: 200px;
+  text-align: left; /* Esto ya lo tienes */
+}
+
+.custom-footer a {
+  color: inherit;           /* Hereda el color del texto circundante */
+  text-decoration: none;    /* Elimina el subrayado */
+  font-weight: inherit;     /* Hereda el peso de la fuente */
+}
+
+.footer-section.nexora-group h3 a {
+  cursor: default;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+}
+
+.logo-img {
+    height: 120px;
+    margin-left: 4rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+/* ================== RESPONSIVE - TABLETS Y CELULARES ================== */
+@media (max-width: 1024px) {
+  .header-container {
+    flex-direction: row;    /* Para que el logo y nav-links puedan estar en la misma línea */
+    flex-wrap: wrap;        /* Permite que el botón de contacto baje a una nueva línea */
+    align-items: center;    /* Centra verticalmente el logo y los nav-links en la primera fila */
+    justify-content: flex-start; /* Alinea el logo y nav-links al inicio (izquierda) */
+    gap: 1rem;              /* Espacio entre el logo y nav-links, y también verticalmente con el botón de contacto */
+    padding: 1rem 1.5rem;   /* Padding del contenedor del header */
+  }
+
+  .logo-img {
+    height: 50px;        /* AJUSTE: Un logo más pequeño para que quepa bien al lado de los botones. Ajusta este valor según necesites. */
+    margin-left: 0;      /* Se alinea por el padding del padre */
+    flex-shrink: 0;      /* Evita que el logo se encoja si falta espacio */
+  }
+
+  .nav-links { /* Contenedor de "Inicio", "Nosotros", "Catálogo" */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;          /* Espacio entre los enlaces internos */
+    width: auto;
+    /* margin: 0; */     /* ESTILO ANTERIOR: Reseteaba márgenes */
+    margin-left: 1rem;  /* NUEVO: Añade este margen para empujar el bloque de enlaces a la derecha. */
+                          /* Puedes ajustar "1rem" al valor que desees (ej. 0.5rem, 1.5rem, 20px, etc.) */
+  }
+
+  .nav-links a { /* Estilo para los enlaces "Inicio", "Nosotros", "Catálogo" */
+    padding: 0.3rem 0.6rem; /* AJUSTE: Padding más compacto para los enlaces */
+    font-size: 0.875rem;    /* AJUSTE: Tamaño de fuente más pequeño (ej. 14px). Ajusta según sea necesario. */
+    /* color: white; ya lo tienes de los estilos generales */
+  }
+
+  .contact-button { /* Este es el DIV que envuelve al botón .btn-contact ("Contáctenos") */
+    width: 100%;             /* Para que ocupe toda la segunda línea */
+    display: flex;           /* Habilita flexbox para centrar el botón hijo */
+    justify-content: center; /* Centra el botón .btn-contact horizontalmente */
+    margin: 0;               /* Resetea márgenes; el 'gap' del .header-container maneja el espacio vertical */
+    /* order: 1; /* Opcional: Si necesitas forzar el orden visual. Con la estructura HTML actual y flex-wrap, debería bajar naturalmente. */
+  }
+
+  .btn-contact { /* El botón "Contáctenos" en sí */
+    padding: 0.6rem 1.5rem;  /* AJUSTE: Padding para que el botón destaque */
+    font-size: 0.95rem;      /* AJUSTE: Tamaño de fuente para el botón de contacto */
+    /* Tus otros estilos para .btn-contact (background, color, etc.) se mantienen */
+  }
+
+  /* --- Mantén el resto de tus estilos responsivos para otros elementos --- */
+  .title-container {
+    padding: 2rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .carousel {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .carousel-item {
+    width: 95%;
+    height: auto;
+  }
+
+  .ver-catalogo-btn { /* Si este es diferente al enlace "Catálogo" del header */
+    width: 80%;
+    font-size: 1.1rem;
+  }
+
+  .nosotros-grid {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .nosotros-text {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .nosotros-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .nosotros-carousel {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .carousel-wrapper {
+    /* width: 50%; /* Esto estaba en tu CSS anterior, revisa si es el valor deseado o 100% */
+    width: 100%; /* Generalmente para móviles se prefiere el ancho completo */
+  }
+
+  .carousel-track img {
+    width: 240px; /* Revisa si este tamaño es el adecuado para 100% width del wrapper */
+    height: 180px;
+  }
+
+  .info-grid {
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 2.5rem;
+  }
+
+  .info-column {
+    width: 100%;
+  }
+
+  .social-btn {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .footer-column,
+  .footer-section {
+    width: 100%;
+    text-align: center;
+  }
+  a, button, .nav-link, .btn-contact, .carousel-item, .social-btn, .ver-catalogo-btn, .contact-button {
+    cursor: none !important;
+  }
+    .responsive-carousel {
+    flex-direction: column;
+  }
+
+  .responsive-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .responsive-row .carousel-item {
+    width: 45%;
+  }
+
+  .responsive-carousel .carru1 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

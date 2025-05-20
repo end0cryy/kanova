@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.crear-container {
+    background-color: rgb(20, 20, 20);
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 20px;
+    color: rgb(206, 155, 255);
+    box-shadow: 7px 8px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* TÍTULO */
+.crear-titulo {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.crear-titulo h1 {
+    font-size: 24px;
+    color: rgb(206, 155, 255);
+}
+
+/* FORMULARIO */
+.crear-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-weight: 600;
+}
+
+.campo input[type="number"],
+.campo input[type="file"],
+.campo select {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+/* BOTÓN */
+.crear-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.crear-btn input[type="submit"] {
+    padding: 10px 25px;
+    background-color: rgb(206, 155, 255);
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.crear-btn input[type="submit"]:hover {
+    background-color: rgba(207, 155, 255, 0.7);
+}
+
+.volver-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.volver-btn a {
+    font-weight: bold;
+    color: rgb(206, 155, 255);
+    text-decoration: none;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.volver-btn a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.imagen-preview{
+    width: 175px;
+    border-radius: 20px;
+    box-shadow: 7px 8px 6px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .crear-container {
+        margin: 40px 20px;
+        padding: 30px 20px;
+    }
+
+    .crear-titulo h1 {
+        font-size: 20px;
+    }
+
+    .campo input,
+    .campo select {
+        font-size: 14px;
+    }
+
+    .crear-btn input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}

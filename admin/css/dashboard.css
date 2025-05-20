@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+}
+
+.opciones {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.opciones h1 {
+    font-size: 3.5vw;
+}
+
+.opciones button {
+    padding: 9px 25px;
+    background-color: rgb(138, 43, 226, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease 0s;
+}
+
+.opciones button:hover {
+    background-color: rgb(138, 43, 226, 0.8);
+}
+
+.barra-busqueda {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+form input[type="text"] {
+    width: 30vw;
+    padding: 9px;
+    border-radius: 20px;
+}
+
+form button {
+    padding: 9px 25px;
+    background-color: rgb(138, 43, 226, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease 0s;
+}
+
+form button:hover {
+    background-color: rgb(138, 43, 226, 0.8);
+}
+
+.tabla-contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-productos {
+    background-color: rgb(20, 20, 20);
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgb(206, 155, 255);
+    border-radius: 20px;
+    color: white;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(206, 155, 255);
+    font-weight: 700;
+}
+
+th {
+    color: rgb(206, 155, 255);
+    font-weight: 700;
+}
+
+tr {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+tr.fila-tabla {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+tr.fila-tabla td,
+tr.fila-tabla th {
+    background-color: transparent;
+    padding: 15px;
+}
+
+td:first-child,
+th:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+td:last-child,
+th:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+img {
+    border-radius: 30px;
+    box-shadow: 7px 8px 6px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 1024px) {
+    .opciones {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .opciones h1 {
+        font-size: 5vw;
+    }
+
+    .barra-busqueda {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px 30px;
+        max-width: 80%;
+    }
+
+    form input[type="text"] {
+        width: 80vw;
+    }
+
+    .tabla-contenedor {
+        padding: 0 10px;
+    }
+
+    .tabla-productos {
+        font-size: 14px;
+        overflow-x: auto;
+    }
+
+    tr {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .opciones {
+        gap: 15px;
+        padding: 25px 10px;
+    }
+
+    .opciones h1 {
+        font-size: 6.5vw;
+    }
+
+    .opciones button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .barra-busqueda {
+        max-width: 95%;
+    }
+
+    form input[type="text"] {
+        width: 90vw;
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+
+    .tabla-productos {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    tr {
+        font-size: 14px;
+    }
+
+    img {
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .opciones h1 {
+        font-size: 8vw;
+    }
+
+    .opciones button {
+        font-size: 13px;
+        padding: 7px 18px;
+    }
+
+    form input[type="text"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    form button {
+        font-size: 13px;
+        padding: 7px 18px;
+    }
+
+    .tabla-productos {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    tr {
+        font-size: 13px;
+    }
+
+    img {
+        width: 60px;
+    }
+}

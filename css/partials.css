@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, p, ul, li, a, b, i{
+    background-color: transparent;
+    list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Barra de navegación*/
+
+.navbar a, .navbar li, .navbar button{
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: blueviolet;
+}
+
+.navbar button{
+    padding: 9px 25px;
+    background-color: rgb(138, 43, 226, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease 0s;
+}
+
+.navbar button:hover{
+    background-color: rgb(138, 43, 226, 0.8);
+}
+
+/*Footer*/
+
+footer{
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer, .footer-section{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px){
+    footer{
+        padding: 7%;
+        justify-content: flex-start;
+    }
+
+    .footer-section{
+        margin-bottom: 2vw;
+    }
+}
+
+.footer-section h3, .footer-section li, .footer-section a{
+    color: white;
+    background-color: transparent;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.footer-section h3{
+    font-weight: 400;
+    color: rgb(206, 155, 255);
+}
+
+.footer-section .loginLink{
+    cursor: default;
+}
+
+i{
+    background-color: transparent;
+}
+
+i{
+    color: rgb(206, 155, 255);
+}
